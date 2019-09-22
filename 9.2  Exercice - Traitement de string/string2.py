@@ -4,4 +4,15 @@ texte = "Ceci est un exemple exemplaire d'exemple exempté d'exemple."
 
 cpt = texte.count("exemple")
 
-print("Il y'a " [::-1] + str(cpt) + " occurences du mot exemple" [::-1])
+print("Il y'a " + str(cpt) + ' occurences du mot "exemple"')
+print(texte.replace("est", "représente"))
+
+
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
+
+
+print(reverse(texte))
